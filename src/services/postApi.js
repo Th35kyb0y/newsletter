@@ -4,6 +4,7 @@ import { URL } from "./endpoint";
 
 export const postLetter = async (letter, emails) => {
     const template_code = JSON.stringify(letter)
+    console.log("this is data that is sending" , template_code)
     return await axios.post(`${URL}/sendNewsletter`, { template_code, emails })
 }
 
