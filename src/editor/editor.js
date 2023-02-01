@@ -48,7 +48,7 @@ export default function EditorPage() {
   };
 
   const sendLetter = async (value, emails) => {
-    await postLetter(value, emails).then(res => { alert(res) }).catch(err => { alert(err) })
+    await postLetter(value, emails).then(res => { alert("success",res) }).catch(err => { alert("error response",err) })
   }
 
 
