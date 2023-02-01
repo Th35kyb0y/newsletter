@@ -48,7 +48,7 @@ export default function EditorPage() {
   };
 
   const sendLetter = async (value, emails) => {
-    await postLetter(value, emails).then(res => { console.log(res) }).catch(err => { console.log(err) })
+    await postLetter(value, emails).then(res => { alert("template has sent to backend") }).catch(err => { alert("error occured while sending template to backend") })
   }
 
 
